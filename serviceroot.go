@@ -101,6 +101,9 @@ type Service struct {
 	// Managers shall only contain a reference to a collection of resources that
 	// comply to the Managers schema.
 	managers string
+	// Oem is the manufacturer/provider specific extension moniker used to divide
+	// the Oem object into sections
+	Oem map[string]json.RawMessage
 	// Product shall include the name of the product represented by this Redfish
 	// service.
 	Product string
